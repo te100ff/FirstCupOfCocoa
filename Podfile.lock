@@ -2,20 +2,20 @@ PODS:
   - Spring (1.0.6)
 
 DEPENDENCIES:
-  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - Spring (from `https://github.com/LexDeBash/Spring.git`)
 
 EXTERNAL SOURCES:
   Spring:
-    :git: https://github.com/MengTo/Spring.git
+    :git: https://github.com/LexDeBash/Spring.git
 
 CHECKOUT OPTIONS:
   Spring:
-    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
-    :git: https://github.com/MengTo/Spring.git
+    :commit: b3bcc7d08cba7766c8b6ac161fee86349b8f6567
+    :git: https://github.com/LexDeBash/Spring.git
 
 SPEC CHECKSUMS:
   Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
 
-PODFILE CHECKSUM: 2beb31c93757af7f4f4cd705f37e8f9c05d2314d
+PODFILE CHECKSUM: c758f4f4f4863b5813a593256f0aaf2fc1c68a57
 
 COCOAPODS: 1.10.1
