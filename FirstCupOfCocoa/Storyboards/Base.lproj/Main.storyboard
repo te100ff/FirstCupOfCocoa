@@ -30,6 +30,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="springButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brF-co-KQm"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0G-VB-j3M" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="64" y="108" width="286" height="250"/>
@@ -100,6 +103,15 @@
                             <constraint firstItem="45L-J2-OLl" firstAttribute="top" secondItem="frU-Bh-j97" secondAttribute="bottom" constant="96" id="ptw-fj-vzT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="CA1-aR-Zfu" id="V71-nd-mw4"/>
+                        <outlet property="curveLabel" destination="dzj-1e-Nmp" id="UAa-Va-76c"/>
+                        <outlet property="delayLabel" destination="ilj-e5-Bwe" id="5n2-Jm-SmX"/>
+                        <outlet property="durationLabel" destination="t94-FI-zJn" id="ugf-06-92t"/>
+                        <outlet property="forceLabel" destination="JYJ-xy-Hbx" id="AoZ-0A-3O1"/>
+                        <outlet property="springButton" destination="45L-J2-OLl" id="am8-Y3-2uW"/>
+                        <outlet property="springView" destination="C0G-VB-j3M" id="dgj-6K-OOd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

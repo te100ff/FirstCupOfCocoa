@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184C448826382AD100F6C4A6 /* Spring setups manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C448726382AD100F6C4A6 /* Spring setups manager.swift */; };
 		1859795226374D1A00BE2AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795126374D1A00BE2AE6 /* AppDelegate.swift */; };
 		1859795426374D1A00BE2AE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795326374D1A00BE2AE6 /* SceneDelegate.swift */; };
 		1859795626374D1A00BE2AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795526374D1A00BE2AE6 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184C448726382AD100F6C4A6 /* Spring setups manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spring setups manager.swift"; sourceTree = "<group>"; };
 		1859794E26374D1A00BE2AE6 /* FirstCupOfCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstCupOfCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1859795126374D1A00BE2AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1859795326374D1A00BE2AE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184C448626382AA100F6C4A6 /* Data managers */ = {
+			isa = PBXGroup;
+			children = (
+				184C448726382AD100F6C4A6 /* Spring setups manager.swift */,
+			);
+			path = "Data managers";
+			sourceTree = "<group>";
+		};
 		1859794526374D1A00BE2AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 			children = (
 				1859796E26375CA800BE2AE6 /* Viewcontrollers */,
 				1859797226375CEA00BE2AE6 /* Models */,
+				184C448626382AA100F6C4A6 /* Data managers */,
 				1859796D26375C0900BE2AE6 /* Storyboards */,
 				1859797126375CDA00BE2AE6 /* Resources */,
 				1859797026375CC300BE2AE6 /* Support */,
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1859795626374D1A00BE2AE6 /* ViewController.swift in Sources */,
+				184C448826382AD100F6C4A6 /* Spring setups manager.swift in Sources */,
 				1859795226374D1A00BE2AE6 /* AppDelegate.swift in Sources */,
 				18597978263768BC00BE2AE6 /* ViewSetups.swift in Sources */,
 				1859795426374D1A00BE2AE6 /* SceneDelegate.swift in Sources */,
@@ -328,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -383,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
