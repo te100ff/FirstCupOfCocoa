@@ -6,5 +6,10 @@
 //
 
 struct  SpringViewSetups {
+    let animation: String
+    let curve: String
+    let force: Float
+    let duration: Float
+    let delay: Float
     
 }
