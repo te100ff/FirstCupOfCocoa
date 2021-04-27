@@ -7,15 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstCupOfCocoa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="FirstCupOfCocoa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45L-J2-OLl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45L-J2-OLl" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="57" y="750" width="300" height="48"/>
                                 <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -35,38 +35,38 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0G-VB-j3M" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="64" y="108" width="286" height="250"/>
+                                <rect key="frame" x="32" y="108" width="350" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Slb-e8-7be">
-                                        <rect key="frame" x="24" y="26" width="59" height="198"/>
+                                        <rect key="frame" x="24" y="41" width="48" height="168"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA1-aR-Zfu">
-                                                <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CA1-aR-Zfu" customClass="SpringLabel" customModule="Spring">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-1e-Nmp">
-                                                <rect key="frame" x="0.0" y="42" width="59" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-1e-Nmp">
+                                                <rect key="frame" x="0.0" y="36" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYJ-xy-Hbx">
-                                                <rect key="frame" x="0.0" y="84" width="59" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <rect key="frame" x="0.0" y="72" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t94-FI-zJn">
-                                                <rect key="frame" x="0.0" y="126" width="59" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <rect key="frame" x="0.0" y="108" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilj-e5-Bwe">
-                                                <rect key="frame" x="0.0" y="168" width="59" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <rect key="frame" x="0.0" y="144" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -79,28 +79,21 @@
                                     <constraint firstItem="Slb-e8-7be" firstAttribute="leading" secondItem="C0G-VB-j3M" secondAttribute="leading" constant="24" id="Y3c-uw-Twu"/>
                                     <constraint firstAttribute="height" constant="250" id="dja-8S-cLU"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frU-Bh-j97">
-                                <rect key="frame" x="57" y="606" width="300" height="48"/>
-                                <color key="backgroundColor" red="0.7357013549326592" green="0.86087566614151001" blue="0.61084187053350392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.827829072" green="0.75764885019999995" blue="0.4859472796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="frU-Bh-j97" firstAttribute="width" secondItem="45L-J2-OLl" secondAttribute="width" id="3LW-yE-5wB"/>
-                            <constraint firstItem="C0G-VB-j3M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="9bo-zY-lL9"/>
+                            <constraint firstItem="C0G-VB-j3M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="9bo-zY-lL9"/>
                             <constraint firstItem="C0G-VB-j3M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="CiS-Mi-BJ7"/>
-                            <constraint firstItem="frU-Bh-j97" firstAttribute="width" secondItem="45L-J2-OLl" secondAttribute="width" id="NLO-Ra-s3V"/>
-                            <constraint firstItem="frU-Bh-j97" firstAttribute="centerX" secondItem="45L-J2-OLl" secondAttribute="centerX" id="NYj-tH-VmG"/>
-                            <constraint firstItem="frU-Bh-j97" firstAttribute="height" secondItem="45L-J2-OLl" secondAttribute="height" id="QJQ-0r-K35"/>
                             <constraint firstItem="45L-J2-OLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XZR-Hj-46j"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C0G-VB-j3M" secondAttribute="trailing" constant="64" id="f1p-yR-Asw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C0G-VB-j3M" secondAttribute="trailing" constant="32" id="f1p-yR-Asw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="45L-J2-OLl" secondAttribute="bottom" constant="64" id="ozt-AL-a1C"/>
-                            <constraint firstItem="45L-J2-OLl" firstAttribute="top" secondItem="frU-Bh-j97" secondAttribute="bottom" constant="96" id="ptw-fj-vzT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -109,7 +102,7 @@
                         <outlet property="delayLabel" destination="ilj-e5-Bwe" id="5n2-Jm-SmX"/>
                         <outlet property="durationLabel" destination="t94-FI-zJn" id="ugf-06-92t"/>
                         <outlet property="forceLabel" destination="JYJ-xy-Hbx" id="AoZ-0A-3O1"/>
-                        <outlet property="springButton" destination="45L-J2-OLl" id="am8-Y3-2uW"/>
+                        <outlet property="springButton" destination="45L-J2-OLl" id="rPY-wr-WdZ"/>
                         <outlet property="springView" destination="C0G-VB-j3M" id="dgj-6K-OOd"/>
                     </connections>
                 </viewController>

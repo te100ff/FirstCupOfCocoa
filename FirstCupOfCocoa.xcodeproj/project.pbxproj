@@ -10,7 +10,7 @@
 		184C448826382AD100F6C4A6 /* Spring setups manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C448726382AD100F6C4A6 /* Spring setups manager.swift */; };
 		1859795226374D1A00BE2AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795126374D1A00BE2AE6 /* AppDelegate.swift */; };
 		1859795426374D1A00BE2AE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795326374D1A00BE2AE6 /* SceneDelegate.swift */; };
-		1859795626374D1A00BE2AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795526374D1A00BE2AE6 /* ViewController.swift */; };
+		1859795626374D1A00BE2AE6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1859795526374D1A00BE2AE6 /* MainViewController.swift */; };
 		1859795926374D1A00BE2AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1859795726374D1A00BE2AE6 /* Main.storyboard */; };
 		1859795B26374D1B00BE2AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1859795A26374D1B00BE2AE6 /* Assets.xcassets */; };
 		1859795E26374D1B00BE2AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1859795C26374D1B00BE2AE6 /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		1859794E26374D1A00BE2AE6 /* FirstCupOfCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstCupOfCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1859795126374D1A00BE2AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1859795326374D1A00BE2AE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1859795526374D1A00BE2AE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1859795526374D1A00BE2AE6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1859795826374D1A00BE2AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1859795A26374D1B00BE2AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1859795D26374D1B00BE2AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		1859796E26375CA800BE2AE6 /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				1859795526374D1A00BE2AE6 /* ViewController.swift */,
+				1859795526374D1A00BE2AE6 /* MainViewController.swift */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1859795626374D1A00BE2AE6 /* ViewController.swift in Sources */,
+				1859795626374D1A00BE2AE6 /* MainViewController.swift in Sources */,
 				184C448826382AD100F6C4A6 /* Spring setups manager.swift in Sources */,
 				1859795226374D1A00BE2AE6 /* AppDelegate.swift in Sources */,
 				18597978263768BC00BE2AE6 /* ViewSetups.swift in Sources */,
