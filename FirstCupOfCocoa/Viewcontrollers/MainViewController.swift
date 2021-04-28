@@ -23,39 +23,45 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelsContent(from: animationSetup)
-        springButton.setTitle("Next \(animationSetup.animation)", for: .normal)
-       
+        labelAndButtonContentLogic()
     }
 
     @IBAction func springButtonPressed(_ sender: SpringButton) {
-        labelsContent(from: animationSetup)
+        viewAnimation(for: springView)
         
-        springView.animation = animationSetup.animation
-        springView.curve = animationSetup.curve
-        springView.force = CGFloat(animationSetup.force)
-        springView.duration = CGFloat(animationSetup.duration)
-        springView.delay = CGFloat(animationSetup.delay)
-        springView.animate()
+        labelAndButtonContentLogic()
         
-        animationLabel.animation = "shake"
-        animationLabel.duration = 4
+        animationLabel.animation = "swing"
+        animationLabel.duration = 2
+        animationLabel.delay = 2
         animationLabel.animate()
         
-        animationSetup = SpringViewSetups.getSetups()
-        
-        sender.setTitle("Next \(animationSetup.animation)", for: .normal)
         sender.animation = "pop"
         sender.animate()
     }
     
+    private func labelAndButtonContentLogic() {
+        labelsContent(from: animationSetup)
+        animationSetup = SpringViewSetups.getSetups()
+        springButton.setTitle("Next \(animationSetup.animation)", for: .normal)
+    }
     
+    // MARK: - View animation and sublabels setup
     private func labelsContent(from setup: SpringViewSetups) {
         animationLabel.text = "Animation: \(setup.animation)"
         curveLabel.text = "Curve: \(setup.curve)"
         forceLabel.text = "Force: " + String(format: "%.2f", setup.force)
         durationLabel.text = "Duration: " + String(format: "%.2f", setup.duration)
         delayLabel.text = "Delay: " + String(format: "%.2f", setup.delay)
+    }
+    
+    private func viewAnimation(for view: SpringView) {
+        view.animation = animationSetup.animation
+        view.curve = animationSetup.curve
+        view.force = CGFloat(animationSetup.force)
+        view.duration = CGFloat(animationSetup.duration)
+        view.delay = CGFloat(animationSetup.delay)
+        view.animate()
     }
     
 }
