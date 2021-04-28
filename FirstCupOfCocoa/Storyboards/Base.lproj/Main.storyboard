@@ -37,47 +37,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0G-VB-j3M" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="32" y="108" width="350" height="250"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Slb-e8-7be">
-                                        <rect key="frame" x="24" y="41" width="48" height="168"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CA1-aR-Zfu" customClass="SpringLabel" customModule="Spring">
-                                                <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dzj-1e-Nmp">
-                                                <rect key="frame" x="0.0" y="36" width="48" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYJ-xy-Hbx">
-                                                <rect key="frame" x="0.0" y="72" width="48" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t94-FI-zJn">
-                                                <rect key="frame" x="0.0" y="108" width="48" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilj-e5-Bwe">
-                                                <rect key="frame" x="0.0" y="144" width="48" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-Y9-J7b">
+                                        <rect key="frame" x="30" y="38" width="186" height="147"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="186" id="mqz-ib-Chs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.827829072" green="0.68472515550000002" blue="0.74583695949999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="Slb-e8-7be" firstAttribute="centerY" secondItem="C0G-VB-j3M" secondAttribute="centerY" id="El0-fo-KNh"/>
-                                    <constraint firstItem="Slb-e8-7be" firstAttribute="leading" secondItem="C0G-VB-j3M" secondAttribute="leading" constant="24" id="Y3c-uw-Twu"/>
                                     <constraint firstAttribute="height" constant="250" id="dja-8S-cLU"/>
+                                    <constraint firstItem="s8e-Y9-J7b" firstAttribute="leading" secondItem="C0G-VB-j3M" secondAttribute="leading" constant="30" id="kI3-MP-jdc"/>
+                                    <constraint firstItem="s8e-Y9-J7b" firstAttribute="top" secondItem="C0G-VB-j3M" secondAttribute="top" constant="38" id="s3L-39-D8u"/>
+                                    <constraint firstAttribute="bottom" secondItem="s8e-Y9-J7b" secondAttribute="bottom" constant="65" id="xQ0-4m-E1t"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -97,11 +72,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationLabel" destination="CA1-aR-Zfu" id="V71-nd-mw4"/>
-                        <outlet property="curveLabel" destination="dzj-1e-Nmp" id="UAa-Va-76c"/>
-                        <outlet property="delayLabel" destination="ilj-e5-Bwe" id="5n2-Jm-SmX"/>
-                        <outlet property="durationLabel" destination="t94-FI-zJn" id="ugf-06-92t"/>
-                        <outlet property="forceLabel" destination="JYJ-xy-Hbx" id="AoZ-0A-3O1"/>
+                        <outlet property="infoLabel" destination="s8e-Y9-J7b" id="yOl-U4-n93"/>
                         <outlet property="springButton" destination="45L-J2-OLl" id="rPY-wr-WdZ"/>
                         <outlet property="springView" destination="C0G-VB-j3M" id="dgj-6K-OOd"/>
                     </connections>

@@ -13,13 +13,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var springButton: SpringButton!
     
     
-    @IBOutlet weak var animationLabel: SpringLabel!
-    @IBOutlet weak var curveLabel: UILabel!
-    @IBOutlet weak var forceLabel: UILabel!
-    @IBOutlet weak var durationLabel: UILabel!
-    @IBOutlet weak var delayLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
-    private var animationSetup = SpringViewSetups.getSetups()
+    
+    private var animationSetup = Animation.getSetups()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,28 +28,14 @@ class MainViewController: UIViewController {
         
         labelAndButtonContentLogic()
         
-        animationLabel.animation = "swing"
-        animationLabel.duration = 2
-        animationLabel.delay = 2
-        animationLabel.animate()
-        
         sender.animation = "pop"
         sender.animate()
     }
     
     private func labelAndButtonContentLogic() {
-        labelsContent(from: animationSetup)
-        animationSetup = SpringViewSetups.getSetups()
+        infoLabel.text = animationSetup.description
+        animationSetup = Animation.getSetups()
         springButton.setTitle("Next \(animationSetup.animation)", for: .normal)
-    }
-    
-    // MARK: - View animation and sublabels setup
-    private func labelsContent(from setup: SpringViewSetups) {
-        animationLabel.text = "Animation: \(setup.animation)"
-        curveLabel.text = "Curve: \(setup.curve)"
-        forceLabel.text = "Force: " + String(format: "%.2f", setup.force)
-        durationLabel.text = "Duration: " + String(format: "%.2f", setup.duration)
-        delayLabel.text = "Delay: " + String(format: "%.2f", setup.delay)
     }
     
     private func viewAnimation(for view: SpringView) {
