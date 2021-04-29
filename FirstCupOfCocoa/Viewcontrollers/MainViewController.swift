@@ -25,7 +25,6 @@ class MainViewController: UIViewController {
 
     @IBAction func springButtonPressed(_ sender: SpringButton) {
         viewAnimation(for: springView)
-        
         labelAndButtonContentLogic()
         
         sender.animation = "pop"
